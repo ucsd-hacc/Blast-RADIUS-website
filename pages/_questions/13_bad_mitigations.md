@@ -16,7 +16,7 @@ The most common timeout in practice is 30 seconds, and 60 seconds is commonly re
 ### Using TACACS+ or Diameter
 
 RADIUS is not the only protocol to suffer from the types of security issues that we outline.  TACACS+ is a popular (TCP-based) administrator login protocol for switches that also does not meet modern cryptographic security standards.  [RFC 8907](https://www.rfc-editor.org/info/rfc8907) was published in September 2020, and explicitly mandates that TACACS+ be used with a secure transport.
-However, much like RADIUS, however, TACACS+ is still most commonly used over insecure transports.
+However, much like RADIUS, TACACS+ is still most commonly used over insecure transports.
 
 Diameter ([RFC 6733](https://www.rfc-editor.org/info/rfc6733)) was initially designed as a successor to RADIUS, although it never replaced RADIUS for many common use cases.  It is used in 3G+ networks, and is generally only supported in large NAS equipment used by bigger ISPs and telecommunications providers; consumer or enterprise-grade equipment typically only supports RADIUS.  
 Although Diameter was intended to replace RADIUS, the protocol itself offers no security when used over TCP.  As a result, RFC 6733 suggests that Diameter messages should be secured using TLS or DTLS; 5G has replaced Diameter with signaling over HTTP/2. The US government [has described exploits](https://www.404media.co/cyber-official-speaks-out-reveals-mobile-network-attacks-in-u-s/) against Diameter targeting mobile users.
