@@ -40,14 +40,12 @@
                 </li>
                 <li>
                     {% assign attacks = site.attacks | last %}
-                    <a class="page-scroll" href="/attack-details">{{ attacks.menu-title }}</a>
+                    <a href="/attack-details">{{ attacks.menu-title }}</a>
                 </li>
-                {% assign media = site.media.first %}
-                {% if media.posts.size >= 3 %}
                 <li>
-                    <a class="page-scroll" href="/media">{{ media.title }}</a>
+                    {% assign coverage = site.coverage.first %}
+                    <a href="/coverage.html">{{ coverage.menu-title }}</a>
                 </li>
-                {% endif %} 
             </ul>
         </div>
         <!-- /.navbar-collapse -->

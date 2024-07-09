@@ -1,0 +1,35 @@
+{% assign page = site.coverage.first %}
+<section id="{{ page.html-id }}" class="bg-bright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 md-auto text-center">
+                <h2 class="section-heading">Security Advisories</h2>
+                <hr class="primary">
+                <ul class="text-left">
+                    {% for item in page.advisories %}
+                        <li>
+                            <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="{{ page.html-id }}" class="bg-bright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 md-auto text-center">
+                <h2 class="section-heading">Media Coverage</h2>
+                <hr class="primary">
+                <ul class="text-left">
+                    {% for item in page.posts %}
+                        <li>
+                            <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -19,7 +19,7 @@ collections:
     output: true
   mitigation:
     output: true
-  media:
+  coverage:
     output: true
   questions:
     output: true
