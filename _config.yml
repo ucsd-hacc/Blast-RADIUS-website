@@ -23,25 +23,6 @@ collections:
     output: true
   questions:
     output: true
-    order:
-      - vuln-id.md
-      - poc.md
-      - what-do.md
-      - hashclash-improvements.md
-      - practicality.md
-      - threat_model.md
-      - vlan.md
-      - whos_affected.md
-      - impact.md
-      - detect_compromise.md
-      - how-mitigate.md
-      - backward-compatibility.md
-      - bad-mitigations.md
-      - eap-tls.md
-      - further-improvements.md
-      - scanning.md
-      - logo.md
-
 
 # Build settings
 markdown: kramdown
