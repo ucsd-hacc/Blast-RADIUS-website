@@ -1,0 +1,15 @@
+{% assign page = site.abstract.first %}
+<section id="{{ page.html-id }}" class="bg-darkxs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>
+                <img src="/img/Blast-RADIUS/Blast-RADIUS_1_transparent_reduced_width.png"/>
+              </h1>
+              <hr>
+              {{ page.content | markdownify }}
+              <a href="/attack-details" class="btn btn-primary btn-xl page-scroll">in-depth attack description</a>
+            </div>
+        </div>
+    </div>
+</section>

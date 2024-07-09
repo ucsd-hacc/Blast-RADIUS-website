@@ -1,0 +1,56 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="/#page-top">
+                <img src="/img/Blast-RADIUS/Blast-RADIUS_1_transparent_reduced_width.png"\>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        {% if page.url == '/' %}
+            {% assign base_path = '' %}
+        {% else %}
+            {% assign base_path = '/' %}
+        {% endif %}
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    {% assign abstract = site.abstract | first %}
+                    <a class="page-scroll" href="{{ base_path }}#{{ abstract.html-id }}">{{ abstract.menu-title }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ base_path }}#paper">Paper</a>
+                </li>
+                <li>
+                    {% assign mitigation = site.mitigation | first %}
+                    <a class="page-scroll" href="{{ base_path }}#{{ mitigation.html-id }}">{{ mitigation.title }}</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ base_path }}#questions">FAQ</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="{{ base_path }}#contact">Research Team</a>
+                </li>
+                <li>
+                    {% assign attacks = site.attacks | last %}
+                    <a class="page-scroll" href="/attack-details">{{ attacks.menu-title }}</a>
+                </li>
+                {% assign media = site.media.first %}
+                {% if media.posts.size >= 3 %}
+                <li>
+                    <a class="page-scroll" href="/media">{{ media.title }}</a>
+                </li>
+                {% endif %} 
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
