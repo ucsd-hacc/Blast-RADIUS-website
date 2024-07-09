@@ -8,6 +8,7 @@ advisories:
     - { 'name': 'CERT: "RADIUS protocol susceptible to forgery attacks. Vulnerability Note VU#456537"', 'link': 'https://kb.cert.org/vuls/id/456537'}
     - { 'name': 'CVE-2024-3596', 'link': 'https://www.cve.org/CVERecord?id=CVE-2024-3596'}
 posts:
+    - { 'name': 'Ars Technica: "New Blast-RADIUS attack breaks 30-year-old protocol used in networks everywhere"', 'link': 'https://arstechnica.com/security/2024/07/new-blast-radius-attack-breaks-30-year-old-protocol-used-in-networks-everywhere/' }
     - { 'name': 'Cloudflare: "RADIUS/UDP vulnerable to improved MD5 collision attack"', 'link': 'https://blog.cloudflare.com/radius-udp-vulnerable-md5-attack' }
     - { 'name': 'CWI News: "Vulnerability demonstrated in RADIUS/UDP network protocol"', 'link': 'https://www.cwi.nl/en/news/vulnerability-demonstrated-in-radiusudp-network-protocol/' }
 ---
