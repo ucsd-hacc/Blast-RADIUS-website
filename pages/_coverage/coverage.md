@@ -6,6 +6,8 @@ advisories:
     - { 'name': 'CERT: "RADIUS protocol susceptible to forgery attacks. Vulnerability Note VU#456537"', 'link': 'https://kb.cert.org/vuls/id/456537'}
     - { 'name': 'CVE-2024-3596', 'link': 'https://www.cve.org/CVERecord?id=CVE-2024-3596'}
     - { 'name': 'NIST National Vulnerability Database: "CVE-2024-3596"', 'link': 'https://nvd.nist.gov/vuln/detail/CVE-2024-3596'}
+    - { 'name': 'Centre for Cybersecurity Belgium: "WARNING: A HIGH SEVERITY VULNERABILITY IS AFFECTING THE RADIUS PROTOCOL"', 'link': 'https://cert.be/en/advisory/warning-high-severity-vulnerability-affecting-radius-protocol' }
+    - { 'name': 'Canadian Centre for Cyber Security: "Alert - RADIUS Protocol Susceptible to Forgery Attacks"', 'link': 'https://www.cyber.gc.ca/en/alerts-advisories/radius-protocol-susceptible-forgery-attacks' }
     - { 'name': 'InkBridge Networks: "Blast RADIUS Resource Hub"', 'link': 'https://www.inkbridgenetworks.com/blastradius'}
     - { 'name': 'Microsoft: "KB5040268: How to manage the Access-Request packets attack vulnerability associated with CVE-2024-3596"', 'link': 'https://support.microsoft.com/en-us/topic/kb5040268-how-to-manage-the-access-request-packets-attack-vulnerability-associated-with-cve-2024-3596-a0e2f0b1-f200-4a7b-844f-48d1d5ab9e66'}
     - { 'name': 'Siemens: "RADIUS Advisory and the benefits of ProductCERT’s improved formats"', 'link': 'https://www.siemens.com/global/en/products/services/cert/news/radius-advisory-and-the-benefits-of-productcerts-improved-formats.html' }
@@ -23,4 +25,5 @@ posts:
     - { 'name': 'The Register: "RADIUS networking protocol blasted into submission through MD5-based flaw"', 'link': 'https://www.theregister.com/2024/07/10/radius_critical_vulnerability/' }
     - { 'name': 'CWI News: "Vulnerability demonstrated in RADIUS/UDP network protocol"', 'link': 'https://www.cwi.nl/en/news/vulnerability-demonstrated-in-radiusudp-network-protocol/' }
     - { 'name': 'Security Boulevard: "&#39;Blast-RADIUS&#39; Critical Bug Blows Up IT Vacation Plans"', 'link': 'https://securityboulevard.com/2024/07/blast-radius-mitm-md5-richixbw/' }
+    - { 'name': 'CSO: "MD5 attack puts RADIUS networks everywhere at risk"', 'link': 'https://www.csoonline.com/article/2515232/md5-attack-puts-radius-networks-everywhere-at-risk.html' }
 ---
