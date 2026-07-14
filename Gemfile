@@ -6,4 +6,8 @@ gem "webrick"
 
 gem "jekyll"
 
-gem "github-pages", "~> 231", group: :jekyll_plugins
+gem "csv"
+
+gem "bigdecimal"
+
+gem "liquid", "~> 4.0.4"
